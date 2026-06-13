@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #1a5f7a; /* Medical blue */
+  --primary-color-dark: #0f3d50;
+  --secondary-color: #22ac9b; /* Vibrant teal/green */
+  --secondary-color-light: #e6f7f5;
+  --bg-color: #f8fafc;
+  --bg-color-alt: #1e293b;
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
