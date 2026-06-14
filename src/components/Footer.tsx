@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import instagram from '../assets/instagram.png';
-import linkedin from '../assets/linkedin.png';
+import whatsapp from '../assets/whatsapp.png';
 import github from '../assets/github.png';
 
 
@@ -23,8 +23,8 @@ const Footer: React.FC = () => {
 
           {/* Aquí faltaban las redes sociales que tenías en el CSS */}
           <div className="social-links" style={{ marginTop: '1.5rem' }}>
-            <a href="#" className="social-icon" aria-label="Instagram"><img src={instagram} /></a>
-            <a href="#" className="social-icon" aria-label="LinkedIn"><img src={linkedin} /></a>
+            <a href="https://www.instagram.com/_cyberheart?igsh=MWdtb2VvZmZ1YXA3bA==" className="social-icon" aria-label="Instagram"><img src={instagram} /></a>
+            <a href="https://wa.me/qr/IBFG45EXNOE4I1" className="social-icon" aria-label="WhatsApp"><img src={whatsapp} /></a>
             <a href="https://github.com/kouliann/CyberHeart.git" className="social-icon" aria-label="GitHub"><img src={github} /></a>
           </div>
         </div>

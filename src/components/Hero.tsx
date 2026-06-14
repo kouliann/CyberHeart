@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <section className="hero" id="hero">
       <div className="hero-content animate-on-scroll">
         <h1 className="hero-title">
-          La salud del futuro, <br /><span className="highlight">hoy</span>.
+          <br /><span className="highlight">La salud del futuro, hoy.</span>
         </h1>
         <p className="hero-subtitle">
           CyberHeart te conecta con especialistas de primer nivel desde la comodidad de tu hogar. Telemedicina rápida, segura, y localizada.
