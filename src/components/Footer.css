@@ -1,6 +1,6 @@
 .footer {
-  background: linear-gradient(135deg, var(--bg-color-alt), var(--primary-color-dark));
-  color: #ffffff;
+  background: var(--bg-white);
+  color: var(--text-muted);
   padding: 4rem 2rem 1rem;
   margin-top: 4rem;
 }
@@ -12,6 +12,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
   margin-bottom: 3rem;
+
 }
 
 .footer-title {
@@ -20,7 +21,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #ffffff;
+  color: var(--primary-color)
 }
 
 .footer-description {
@@ -60,8 +61,18 @@
   transition: opacity 0.3s ease;
 }
 
-.footer-links li:hover {
+/* NUEVO: Asegura que los enlaces se vean bien en el fondo oscuro */
+.footer-links a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover,
+.footer-links a:hover {
   opacity: 1;
+  color: var(--secondary-color);
+  /* Opcional: que cambien de color al pasar el mouse */
 }
 
 .social-links {
@@ -73,13 +84,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   text-decoration: none;
   font-size: 1.2rem;
   transition: all 0.3s ease;
+  color: #ffffff;
+}
+
+.social-icon img {
+  width: 80%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
 }
 
 .social-icon:hover {
